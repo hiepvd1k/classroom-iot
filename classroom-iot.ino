@@ -6,8 +6,8 @@
 #include "RootManager.h"
 
 /* Define the WiFi credentials */
-#define WIFI_SSID "zero-2"
-#define WIFI_PASSWORD "24071961"
+#define WIFI_SSID "OPPO A5s"
+#define WIFI_PASSWORD "123456789"
 
 /* Define the RTDB URL and database secret */
 #define DATABASE_URL "classroom-iot-default-rtdb.asia-southeast1.firebasedatabase.app"

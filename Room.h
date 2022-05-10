@@ -90,11 +90,13 @@ public:
     {
         for (int i = 0; i < deviceArray.size(); i++)
         {
+            
             if (deviceList[i]->type == Device::DeviceType::Type_Fan)
             {
                 deviceList[i]->smartToggleFunc(deviceList);
             }
             deviceList[i]->run();
+            
         }
     }
 

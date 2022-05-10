@@ -181,14 +181,18 @@ namespace Device
             Device::update(deviceJson);
             deviceJson.get(data, "smartToggle");
             smartToggle = data.to<int>();
+
+            deviceJson.get(data, "smartToggleConfig/value");
+            value = data.to<float>();
         }
 
         void smartToggleFunc(Device **deviceList)
         {
-            if (state == 1)
-            {
-                if (smartToggle == 1)
-                {
+            smartToggle = deviceList[sensorIndex]->state;
+            if (smartToggle == 1)
+            {                
+                /* if (state == 1)
+                { */
                     if (value <= deviceList[sensorIndex]->getSensorData())
                     {
                         state = changeState;
@@ -197,7 +201,7 @@ namespace Device
                     {
                         state = !changeState;
                     }
-                }
+                /* } */
             }
         }
     };
