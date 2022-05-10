@@ -4,9 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\Users\\Black\\Documents\\Arduino\\libraries",
-                "C:/Users/Black/Documents/Arduino/libraries/Firebase_ESP8266_Client/src",
-                "C:/Users/Black/Documents/Arduino/libraries/OneWire"
+                "C:\\Users\\Black\\Documents\\Arduino\\libraries\\**",
+                "C:\\Users\\Black\\AppData\\Local\\Arduino15\\packages\\**"
             ],
             "defines": [
                 "_DEBUG",

@@ -35,12 +35,11 @@ public:
 
     void run()
     {
+        roomManager->run(rootJson, fbdo);
         updateFromServer(rootJson);
-
         if (change == true)
         {
             roomManager->update(rootJson);
-            roomManager->run(rootJson, fbdo);
             change = false;
         }
     }

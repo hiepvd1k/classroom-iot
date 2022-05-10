@@ -1,5 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <FirebaseESP8266.h>
+// Provide the RTDB payload printing info and other helper functions.
+#include <addons/RTDBHelper.h>
 
 #include "RootManager.h"
 

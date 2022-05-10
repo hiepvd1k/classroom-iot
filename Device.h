@@ -185,15 +185,18 @@ namespace Device
 
         void smartToggleFunc(Device **deviceList)
         {
-            if (smartToggle == 1)
+            if (state == 1)
             {
-                if (value <= deviceList[sensorIndex]->getSensorData())
+                if (smartToggle == 1)
                 {
-                    state = changeState;
-                }
-                else
-                {
-                    state = !changeState;
+                    if (value <= deviceList[sensorIndex]->getSensorData())
+                    {
+                        state = changeState;
+                    }
+                    else
+                    {
+                        state = !changeState;
+                    }
                 }
             }
         }
